@@ -85,7 +85,7 @@ const Navbar: React.FC = () => {
                 }
                 to="/catalog"
               >
-                Catálogo de todo.
+                Catálogo
               </NavLink>
             </li>
             <li className="nav-item">
