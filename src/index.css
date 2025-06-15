@@ -1,0 +1,211 @@
+/* Estilos globales */
+html,
+body {
+  height: 100%;
+  font-family: "Inter", sans-serif;
+}
+
+body {
+  padding-top: 70px; /* Altura de la navbar */
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main {
+  flex: 1 0 auto;
+}
+
+/* Personalizar navbar */
+.navbar {
+  background-color: #2e7d32 !important; /* Verde oscuro */
+  padding: 1rem 0;
+}
+.navbar-brand {
+  display: flex;
+  align-items: center;
+}
+.navbar-brand img {
+  transition: transform 0.3s;
+}
+.navbar-brand img:hover {
+  transform: scale(1.1);
+}
+.navbar-brand-text {
+  color: #ffffff !important;
+  font-size: 1.5rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.nav-link {
+  color: #ffffff !important;
+  font-weight: 500;
+  padding: 0.5rem 1rem;
+  transition: background-color 0.3s, color 0.3s;
+  border-radius: 4px;
+}
+.nav-link:hover,
+.nav-link:focus {
+  color: #ffffff !important;
+  background-color: #4caf50 !important; /* Verde claro en hover */
+}
+.nav-link.active {
+  background-color: #388e3c !important; /* Verde medio para activo */
+}
+.navbar-collapse.show {
+  visibility: visible;
+  opacity: 1;
+}
+.navbar-toggler:hover {
+  background-color: #4caf50 !important; /* Verde claro en hover */
+  transform: scale(1.1);
+}
+.navbar-toggler {
+  border-color: #ffffff !important;
+  padding: 0.25rem 0.75rem;
+  transition: background-color 0.3s, transform 0.3s;
+}
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(255, 255, 255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+.navbar-collapse {
+  background-color: #2e7d32; /* Fondo para menú colapsado */
+  transition: visibility 0.3s, opacity 0.3s;
+}
+.nav-link i {
+  font-size: 1.1rem;
+}
+.btn-outline-danger i {
+  font-size: 1.1rem;
+}
+@media (max-width: 991px) {
+  .navbar-collapse {
+    padding: 1rem;
+  }
+  .nav-link {
+    margin: 0.5rem 0;
+  }
+  .navbar-brand-text {
+    font-size: 1.2rem;
+  }
+}
+
+/* Estilos para formularios de autenticación */
+.auth-form-container {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+.auth-form-card {
+  border: none;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  background-color: #ffffff;
+}
+.auth-form-card .card-body {
+  padding: 2rem;
+}
+.auth-form-card h3 {
+  font-weight: 700;
+  color: #2e7d32; /* Verde oscuro */
+}
+.auth-form-card .btn-primary {
+  font-weight: 600;
+  padding: 0.75rem;
+  border-radius: 8px;
+  background-color: #4caf50; /* Verde claro */
+  border-color: #4caf50;
+}
+.auth-form-card .btn-primary:hover {
+  background-color: #388e3c; /* Verde medio */
+  border-color: #388e3c;
+}
+.auth-form-card .btn-outline-danger {
+  font-weight: 600;
+  padding: 0.75rem;
+  border-radius: 8px;
+}
+.auth-form-card .form-label {
+  font-weight: 500;
+  color: #2e7d32;
+}
+.auth-form-card .form-control {
+  border-radius: 8px;
+  padding: 0.75rem;
+}
+.auth-form-card .alert {
+  border-radius: 8px;
+  font-size: 0.9rem;
+}
+.auth-form-card a {
+  color: #4caf50;
+  text-decoration: none;
+}
+.auth-form-card a:hover {
+  text-decoration: underline;
+}
+
+/* Personalizar tarjetas de productos */
+.card {
+  border: none;
+  transition: transform 0.2s;
+  background-color: #f5f5f5; /* Fondo claro natural */
+}
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1) !important;
+}
+.card-img-top {
+  object-fit: cover;
+  height: 200px;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+/* Personalizar botones */
+.btn-primary {
+  background-color: #4caf50; /* Verde claro */
+  border-color: #4caf50;
+}
+.btn-primary:hover {
+  background-color: #388e3c; /* Verde medio */
+  border-color: #388e3c;
+}
+.btn-success {
+  background-color: #2e7d32; /* Verde oscuro */
+  border-color: #2e7d32;
+}
+.btn-success:hover {
+  background-color: #1b5e20; /* Verde más oscuro */
+  border-color: #1b5e20;
+}
+
+/* Footer */
+footer {
+  background-color: #2e7d32 !important;
+}
+
+/* Jumbotron en página principal */
+.jumbotron {
+  background-color: #e8f5e9 !important; /* Verde muy claro */
+  border-radius: 12px;
+  padding: 3rem !important;
+}
+
+/* Estilos para el carrusel */
+.carousel {
+  overflow: hidden;
+}
+.carousel-caption {
+  background-color: rgba(46, 125, 50, 0.6); /* Verde oscuro semitransparente */
+  border-radius: 8px;
+  padding: 1rem;
+}
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: rgba(46, 125, 50, 0.5);
+  border-radius: 50%;
+  padding: 1rem;
+}
